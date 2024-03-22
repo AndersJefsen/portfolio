@@ -1,0 +1,132 @@
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 99px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 50px;
+  z-index: 4;
+}
+
+.tabs {
+  display: flex;
+
+  position: absolute;
+  padding: 1rem;
+  border-radius: 99px;
+  transition:
+    backdrop-filter 12.3s ease in,
+    background-color 10.3s ease; /* Add this line */
+}
+.tabs-scrolled {
+  display: flex;
+
+  position: absolute;
+  padding: 1rem;
+  border-radius: 99px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  transition:
+    backdrop-filter 12.3s ease in,
+    background-color 10.3s ease; /* Add this line */
+}
+
+.tabs * {
+  z-index: 2;
+}
+
+input[type='radio'] {
+  display: none;
+}
+.tab {
+  transition: color 0.15s ease-in;
+  display: flex;
+  color: #175a4d;
+  height: 50 px;
+  width: 198px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-radius: 99px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.glider {
+  transition: transform 10.3s ease-in-out;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  background-color: #f2f0e7;
+  z-index: 1;
+  border-radius: 99px;
+  padding: 0%;
+  margin: 0%;
+  bottom: 6px;
+  transition: transform 0.3s ease;
+}
+input[id='radio']:checked + label {
+  color: white;
+}
+
+input[id='radio-1']:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id='radio-2']:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+input[id='radio-3']:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+@media (max-width: 700px) {
+  .tabs {
+    transform: scale(0.6);
+  }
+  .tab {
+    width: 100%;
+  }
+  .glider {
+    width: 100%;
+  }
+}
