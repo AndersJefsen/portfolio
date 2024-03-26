@@ -7,7 +7,7 @@ const nextConfig = {
       // Add other paths as needed
     };
   },
-  output: 'standalone', // or 'script' based on your deployment requirements
+  output: 'export', // or 'script' based on your deployment requirements
 };
 
 export default nextConfig;
