@@ -6,7 +6,7 @@ const nextConfig = {
           '/about': { page: '/about' },
         };
       },
-    output: 'out',
+    output: 'export',
   };
   
   export default nextConfig;
