@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     exportPathMap: function () {
-      return {
-        '/': { page: '/' },
-      };
-    },
+        return {
+          '/': { page: '/' },
+          '/about': { page: '/about' },
+        };
+      },
     output: 'out',
   };
   
