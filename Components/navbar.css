@@ -87,10 +87,9 @@ input[type='radio'] {
 }
 
 .glider {
-  transition: transform 10.3s ease-in-out;
-
+  transition: transform 0.5s ease-in-out; /* Change transition property to transform and adjust duration */
   position: absolute;
-  display: flex;
+  display:grid;
   align-items: center;
   justify-content: center;
   height: 50px;
@@ -101,7 +100,6 @@ input[type='radio'] {
   padding: 0%;
   margin: 0%;
   bottom: 6px;
-  transition: transform 0.3s ease;
 }
 input[id='radio']:checked + label {
   color: white;

@@ -1,11 +1,16 @@
+
+.content{
+  width: 100%;
+}
 h1 {
   padding-top: 125px;
   padding-bottom: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   opacity: 0;
   animation: dropIn 1s ease 0.2s forwards;
+  text-align: center ;
 }
 
 span {
@@ -16,11 +21,20 @@ span {
 }
 
 h1 span {
-  line-height: 120px;
-  font-size: 120px;
+  
+  line-height: 8vw;
+  font-size: 5vw;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #175a4d;
+}
+
+@media (min-width: 2500px) {
+  h1 span{
+    font-size: 130px;
+    line-height: 180px;
+
+  }
 }
 
 p {
@@ -30,7 +44,7 @@ p {
   flex-direction: column;
   line-height: 35px;
   font-size: 22px;
-  width: 700px;
+  width: 70%;
   padding: 0 30px;
   color: #175a4d;
   font-family: 'Roboto', sans-serif;
@@ -55,7 +69,6 @@ p {
   flex-direction: row;
   opacity: 0;
   animation: dropIn 1s ease 0.8s forwards;
-  
 }
 
 
@@ -63,21 +76,22 @@ p {
   max-width: 500px;
   width: 100%;
   margin: 15px;
-  height: 550px;
   background-color: #1f658c;
   border-radius: 99px;
   z-index: 1;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   display: flex;
   overflow: hidden;
   flex-direction: column;
   text-align: start;
-  padding-top: 500px;
+  padding-left: 30px;
+
+  
 }
 
 .box1-text {
-  width: 400px;
+  width: 100%;
   height: auto;
   justify-content: start;
   h3 {
@@ -107,8 +121,9 @@ p {
   max-width: 830px;
   width: 100%;
   margin: 15px;
-  height: 550px;
-  background-color: #4EC900;
+  background-color: #55FFFE;
+  background-color: hsl(180, 100%, 85%); /* Adjust as needed */
+
   border-radius: 99px;
   z-index: 1;
   justify-content: center;
@@ -121,7 +136,7 @@ p {
 
 
 .box2-text {
-  width: 850px;
+  width: 490px;
   height: auto;
   justify-content: start;
   h3 {
@@ -149,6 +164,7 @@ p {
 
 .box1,
 .box2 {
+  
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -172,19 +188,26 @@ p {
   .box1 {
     max-width: 500px;
     margin: 30px;
+    height: 550px;
   }
   .box2 {
     max-width: 900px;
     margin: 30px;
+    height: 550px;
+
   }
 }
 
 @media (max-width: 1700px) {
   .box1 {
     max-width: 500px;
+    height: 400px;
+
   }
   .box2 {
     max-width: calc(100% - 60px);
+    height: 400px;
+
   }
 }
 
@@ -195,6 +218,8 @@ p {
   .box1, .box2 {
     max-width: calc(100% - 60px);
     margin: 15px;
+    height: 400px;
+
   }
 }
 

@@ -25,15 +25,15 @@ const Index = () => {
           </p>
         </div>
         <div className="cards">
-          <div className="box1">
+          <Link href={'/about'} className="box1">
             <div className="box1-text">
               <h3>Android Application</h3>
               <h2>StockVest</h2>
             </div>
             <Image src="/pic.jpeg" alt="stonks pic" width={400} height={500} />
-          </div>
+          </Link>
 
-          <div className="box2">
+          <Link href={'/about'} className="box2">
             <div className="box2-text">
               <h3>JavaFX Application</h3>
               <h2>Matador</h2>
@@ -44,7 +44,7 @@ const Index = () => {
               width={600}
               height={500}
             />
-          </div>
+          </Link>
         </div>
         <div className="cards">
           <div className="box2"></div>

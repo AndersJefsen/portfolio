@@ -1,15 +1,23 @@
+import './footer.css';
+
 export default function Foooter() {
 return (
-    <footer>
-        <div>
-            <p>© {new Date().getFullYear()} Anders Jefsen</p>
+    <footer className='footer'>
+        <div >
+            <p className='copyright'>© {new Date().getFullYear()} Anders Jefsen</p>
         </div>
+
+        <div className="spacer"></div>
+        <div className='links'>
         <ul>
+            <li className='li-header'>
+              Find me on  
+            </li>
             <li>
                 <a href="https://github.com/AndersJefsen">Github</a> 
             </li>
             <li>
-                <a href="">Linkedin</a>
+                <a href="https://www.linkedin.com/in/anders-jefsen-7a689a1b5/">Linkedin</a>
             </li>
             <li>
                 <a href="">CV</a>
@@ -17,10 +25,14 @@ return (
         </ul>
         
         <ul>
+             <li className='li-header'>
+              Contact
+            </li>
             <li>
                 <a href="mailto:andersjeff397@gmail.com">E-mail</a>  
             </li>
         </ul>
+        </div>
     </footer>
 );
 }

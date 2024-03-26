@@ -15,10 +15,15 @@ export default function Navbar() {
       }
     };
 
+    console.log('Adding scroll event listener');
+
+
     window.addEventListener('scroll', handleScroll);
 
     // Clean up the event listener when the component unmounts
     return () => {
+      console.log('Removing scroll event listener');
+
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -33,7 +38,10 @@ export default function Navbar() {
             name="tabs"
             id="radio-1"
             checked={router.pathname === '/'}
-            onChange={() => router.push('/')}
+            onChange={() => {
+              console.log('Navigating to Home');
+              router.push('/');
+            }}
           />
           <label className="tab" htmlFor="radio-1">
             Home
@@ -43,8 +51,10 @@ export default function Navbar() {
             name="tabs"
             id="radio-2"
             checked={router.pathname === '/about'}
-            onChange={() => router.push('/about')}
-          />
+            onChange={() => {
+              console.log('Navigating to About');
+              router.push('/about');
+            }}          />
           <label className="tab" htmlFor="radio-2">
             About
           </label>
@@ -53,8 +63,10 @@ export default function Navbar() {
             name="tabs"
             id="radio-3"
             checked={router.pathname === '/contact'}
-            onChange={() => router.push('/contact')}
-          />
+            onChange={() => {
+              console.log('Navigating to Contact');
+              router.push('/contact');
+            }}          />
           <label className="tab" htmlFor="radio-3">
             Contact
           </label>
