@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    exportPathMap: function () {
-        return {
-          '/': { page: '/' },
-          '/about': { page: '/about' },
-        };
-      },
-    output: 'export',
-  };
-  
-  export default nextConfig;
+  async generateStaticParams() {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      // Add other paths as needed
+    };
+  },
+  output: 'standalone', // or 'script' based on your deployment requirements
+};
+
+export default nextConfig;
