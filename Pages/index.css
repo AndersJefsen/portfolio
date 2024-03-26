@@ -1,5 +1,4 @@
-
-.content{
+.content {
   width: 100%;
 }
 h1 {
@@ -10,7 +9,7 @@ h1 {
   align-items: center;
   opacity: 0;
   animation: dropIn 1s ease 0.2s forwards;
-  text-align: center ;
+  text-align: center;
 }
 
 span {
@@ -21,7 +20,6 @@ span {
 }
 
 h1 span {
-  
   line-height: 8vw;
   font-size: 5vw;
   font-family: 'Roboto', sans-serif;
@@ -30,10 +28,9 @@ h1 span {
 }
 
 @media (min-width: 2500px) {
-  h1 span{
+  h1 span {
     font-size: 130px;
     line-height: 180px;
-
   }
 }
 
@@ -71,7 +68,6 @@ p {
   animation: dropIn 1s ease 0.8s forwards;
 }
 
-
 .box1 {
   max-width: 500px;
   width: 100%;
@@ -86,8 +82,6 @@ p {
   flex-direction: column;
   text-align: start;
   padding-left: 30px;
-
-  
 }
 
 .box1-text {
@@ -121,7 +115,7 @@ p {
   max-width: 830px;
   width: 100%;
   margin: 15px;
-  background-color: #55FFFE;
+  background-color: #55fffe;
   background-color: hsl(180, 100%, 85%); /* Adjust as needed */
 
   border-radius: 99px;
@@ -133,7 +127,6 @@ p {
   flex-direction: column;
   text-align: start;
 }
-
 
 .box2-text {
   width: 490px;
@@ -164,7 +157,6 @@ p {
 
 .box1,
 .box2 {
-  
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -183,7 +175,6 @@ p {
   }
 }
 
-
 @media (min-width: 1700px) {
   .box1 {
     max-width: 500px;
@@ -194,7 +185,6 @@ p {
     max-width: 900px;
     margin: 30px;
     height: 550px;
-
   }
 }
 
@@ -202,12 +192,10 @@ p {
   .box1 {
     max-width: 500px;
     height: 400px;
-
   }
   .box2 {
     max-width: calc(100% - 60px);
     height: 400px;
-
   }
 }
 
@@ -215,11 +203,10 @@ p {
   .cards {
     flex-direction: column;
   }
-  .box1, .box2 {
+  .box1,
+  .box2 {
     max-width: calc(100% - 60px);
     margin: 15px;
     height: 400px;
-
   }
 }
-

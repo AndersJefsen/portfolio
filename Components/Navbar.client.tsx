@@ -17,7 +17,6 @@ export default function Navbar() {
 
     console.log('Adding scroll event listener');
 
-
     window.addEventListener('scroll', handleScroll);
 
     // Clean up the event listener when the component unmounts
@@ -54,7 +53,8 @@ export default function Navbar() {
             onChange={() => {
               console.log('Navigating to About');
               router.push('/about');
-            }}          />
+            }}
+          />
           <label className="tab" htmlFor="radio-2">
             About
           </label>
@@ -66,7 +66,8 @@ export default function Navbar() {
             onChange={() => {
               console.log('Navigating to Contact');
               router.push('/contact');
-            }}          />
+            }}
+          />
           <label className="tab" htmlFor="radio-3">
             Contact
           </label>

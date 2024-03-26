@@ -89,7 +89,7 @@ input[type='radio'] {
 .glider {
   transition: transform 0.5s ease-in-out; /* Change transition property to transform and adjust duration */
   position: absolute;
-  display:grid;
+  display: grid;
   align-items: center;
   justify-content: center;
   height: 50px;
