@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Components/Navbar.client';
+import Navbar from '../../Components/Navbar.client';
 import Layout from '@/app/layout';
 
 const About: React.FC = () => {
