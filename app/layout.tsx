@@ -1,7 +1,7 @@
 import './globals.css';
 import React from 'react';
-import Navbar from '../Components/Navbar.client';
-import Footer from '../Components/footer';
+import Navbar from '../components/Navbar.client';
+import Footer from '../components/footer';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
