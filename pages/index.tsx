@@ -13,13 +13,13 @@ const Index = () => {
       <div className="content">
         <h1>
           <span>
-            <span>Hello. I'm Anders.</span>
+            <span>Hello. I&apos;m Anders.</span>
             <span>A Software Engineer.</span>
           </span>
         </h1>
         <div className="p-div">
           <p>
-            I'm enthusiastic about building apps and websites that prioritize
+            I&apos;m enthusiastic about building apps and websites that prioritize
             user satisfaction, focusing on creating engaging experiences that
             are easy to use and accessible to all.
           </p>

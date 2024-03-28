@@ -5,7 +5,7 @@ import Layout from '@/app/layout';
 const About: React.FC = () => {
   return (
     <Layout>
-      <h1>I'm Anders</h1>
+      <h1>I&apos;m Anders</h1>
       <p>I am a Software Engineer</p>
     </Layout>
   );
