@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import './index.css';
-import Layout from '../../app/layout';
+import Layout from '../app/layout';
 import Image from 'next/image';
 
 const Index = () => {
