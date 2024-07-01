@@ -18,7 +18,7 @@ const Index = () => {
           </span>
         </h1>
         <div className="p-div">
-          <p>
+          <p className='index-p'>
             I&apos;m enthusiastic about building apps and websites that prioritize
             user satisfaction, focusing on creating engaging experiences that
             are easy to use and accessible to all.
