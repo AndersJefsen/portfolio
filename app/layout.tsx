@@ -1,11 +1,11 @@
 import './globals.css';
 import React from 'react';
 // Removed direct import of Navbar since we're using dynamic import below
-import Footer from '../../components/footer.tsx';
+import Footer from '@/components/footer';
 import dynamic from 'next/dynamic';
-import { NavbarProvider } from '../../components/NavbarContext.client.tsx';
+import { NavbarProvider } from '@/components/NavbarContext.client';
 
-const NavbarClient = dynamic(() => import('../../components/Navbar.client.tsx'), {
+const NavbarClient = dynamic(() => import('@/components/Navbar.client'), {
   ssr: false, // This will only render the component on the client side
 });
 
