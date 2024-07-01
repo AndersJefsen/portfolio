@@ -30,7 +30,7 @@ const Index = () => {
               <h3>Android Application</h3>
               <h2>StockVest</h2>
             </div>
-            <Image src="/pic.jpeg" alt="stonks pic" width={400} height={500} />
+            <Image src="/pic.png" alt="stonks pic" width={400} height={500} />
           </Link>
 
           <Link href={'/about'} className="box2">
@@ -65,7 +65,7 @@ const Index = () => {
               <h3>Android Application</h3>
               <h2>StockVest</h2>
             </div>
-            <Image src="/pic.jpeg" alt="stonks pic" width={400} height={500} />
+            <Image src="/pic.png" alt="stonks pic" width={400} height={500} />
           </Link>
         </div>
       </div>

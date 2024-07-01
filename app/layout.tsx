@@ -1,6 +1,5 @@
 import './globals.css';
 import React from 'react';
-// Removed direct import of Navbar since we're using dynamic import below
 import Footer from '@/components/footer';
 import dynamic from 'next/dynamic';
 import { NavbarProvider } from '@/components/NavbarContext.client';
