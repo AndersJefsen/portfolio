@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <header className='about-header'>
             <div className='left-box'>
               <h1>I&apos;m Anders</h1>
-                <p className='about-p'>I'm Anders, an independent full-stack web developer from Denmark, building apps and online experiences for companies large and small.</p>
+                <p className='about-p'>I&apos;m Anders, an independent full-stack web developer from Denmark, building apps and online experiences for companies large and small.</p>
               </div>
             <div className='right-box'>
               <div className='picture'>
