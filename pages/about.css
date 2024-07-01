@@ -1,0 +1,45 @@
+.about-content{
+    padding-top: 6rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    padding-right: 6rem;
+    padding-left: 6rem;
+
+}
+
+
+
+.about-p {
+    font-family: "Suisse Intl", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: "Suisse Intl", sans-serif;
+}
+
+.left-box{
+    width: 50%;
+}
+
+.about-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+
+}

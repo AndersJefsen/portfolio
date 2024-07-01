@@ -34,7 +34,7 @@ h1 span {
   }
 }
 
-p {
+.index-p {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -75,19 +75,19 @@ p {
   background-color: #1f658c;
   border-radius: 99px;
   z-index: 1;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  text-align: start;
+  text-align: flex-start;
   padding-left: 30px;
 }
 
 .box1-text {
   width: 100%;
   height: auto;
-  justify-content: start;
+  justify-content: flex-start;
   h3 {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
@@ -125,13 +125,13 @@ p {
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  text-align: start;
+  text-align: flex-start;
 }
 
 .box2-text {
   width: 490px;
   height: auto;
-  justify-content: start;
+  justify-content: flex-start;
   h3 {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
