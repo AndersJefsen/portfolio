@@ -47,8 +47,26 @@ const Index = () => {
           </Link>
         </div>
         <div className="cards">
-          <div className="box2"></div>
-          <div className="box1"></div>
+          <Link href={'/golfrobot'} className="box2">
+            <div className="box2-text">
+              <h3>Computer Vision & Robotics Control System</h3>
+              <h2>GolfBot</h2>
+            </div>
+            <Image
+              src="/GolfRobot.png"
+              alt="golfbot pic"
+              width={500}
+              height={300}
+            />
+          </Link>
+
+          <Link href={'/about'} className="box1">
+            <div className="box1-text">
+              <h3>Android Application</h3>
+              <h2>StockVest</h2>
+            </div>
+            <Image src="/pic.jpeg" alt="stonks pic" width={400} height={500} />
+          </Link>
         </div>
       </div>
     </Layout>

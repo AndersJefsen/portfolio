@@ -1,12 +1,17 @@
 import './globals.css';
 import React from 'react';
-import Navbar from '../components/Navbar.client';
+// Removed direct import of Navbar since we're using dynamic import below
 import Footer from '../components/footer';
+import dynamic from 'next/dynamic';
+
+const NavbarClient = dynamic(() => import('../components/Navbar.client.tsx'), {
+  ssr: false, // This will only render the component on the client side
+});
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="layout">
-      <Navbar />
+      <NavbarClient /> 
 
       {children}
       <Footer />

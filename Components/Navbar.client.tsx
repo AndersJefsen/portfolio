@@ -5,6 +5,8 @@ import './navbar.css';
 import { useEffect } from 'react';
 
 export default function Navbar() {
+  const router = useRouter();
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('.tabs');
@@ -26,7 +28,6 @@ export default function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const router = useRouter();
 
   return (
     <nav className="navbar">
