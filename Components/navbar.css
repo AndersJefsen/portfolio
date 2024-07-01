@@ -32,12 +32,14 @@
 
 .navbar {
   position: fixed;
+  
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 500px;
   height: 50px;
   z-index: 4;
+
 }
 
 .tabs {
@@ -46,17 +48,16 @@
   position: absolute;
   padding: 1rem;
   border-radius: 99px;
-
+  margin-top: 20px;
 }
 .tabs-scrolled {
   display: flex;
-
   position: absolute;
   padding: 1rem;
   border-radius: 99px;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
-
+  
 }
 
 .tabs * {
@@ -77,8 +78,10 @@ input[type='radio'] {
   font-weight: 400;
   border-radius: 99px;
   cursor: pointer;
-  margin: 0;
+  
   padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
   align-items: center;
   justify-content: center;
 }
@@ -91,11 +94,12 @@ input[type='radio'] {
   justify-content: center;
   height: 50px;
   width: 200px;
-  background-color: #f2f0e7;
+  background-color: rgba(255, 255, 255, 0.4);
   z-index: 1;
   border-radius: 99px;
   padding: 0%;
-  margin: 0%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   bottom: 6px;
 }
 input[id='radio']:checked + label {
