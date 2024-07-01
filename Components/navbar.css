@@ -42,13 +42,11 @@
 
 .tabs {
   display: flex;
-
+  transition: all 0.5s ease; /* Smooth transition for all changes */
   position: absolute;
   padding: 1rem;
   border-radius: 99px;
-  transition:
-    backdrop-filter 12.3s ease in,
-    background-color 10.3s ease; /* Add this line */
+
 }
 .tabs-scrolled {
   display: flex;
@@ -57,10 +55,8 @@
   padding: 1rem;
   border-radius: 99px;
   background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  transition:
-    backdrop-filter 12.3s ease in,
-    background-color 10.3s ease; /* Add this line */
+  backdrop-filter: blur(20px);
+
 }
 
 .tabs * {
@@ -71,6 +67,7 @@ input[type='radio'] {
   display: none;
 }
 .tab {
+  position:relative;
   transition: color 0.15s ease-in;
   display: flex;
   color: #175a4d;

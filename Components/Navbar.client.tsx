@@ -2,10 +2,11 @@
 
 import { useRouter } from 'next/router';
 import './navbar.css';
-import { useEffect } from 'react';
+import { useEffect,useState} from 'react';
 
 export default function Navbar() {
   const router = useRouter();
+  const [activeTab, setActiveTab] = useState(router.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,18 +17,29 @@ export default function Navbar() {
         navbar?.classList.remove('tabs-scrolled');
       }
     };
-
-    console.log('Adding scroll event listener');
-
     window.addEventListener('scroll', handleScroll);
+    return () => { window.removeEventListener('scroll', handleScroll); };
+  },[]);
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      console.log('Removing scroll event listener');
+  useEffect(() => {
+    const handleRouteChange = (url:string) => {
+      setActiveTab(url);
+    }
+   router.events.on('routeChangeComplete', handleRouteChange);
+   return () => {
+     router.events.off('routeChangeComplete', handleRouteChange);
+   }
+  }, [router.events]);
 
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const navigate = (path: string) => {
+    const animationDuration = 500; // milliseconds
+  
+    setActiveTab(path); // This triggers the glider to start moving
+  
+    setTimeout(() => {
+      router.push(path);
+    }, animationDuration);
+  }
 
   return (
     <nav className="navbar">
@@ -37,11 +49,8 @@ export default function Navbar() {
             type="radio"
             name="tabs"
             id="radio-1"
-            checked={router.pathname === '/'}
-            onChange={() => {
-              console.log('Navigating to Home');
-              router.push('/');
-            }}
+            checked={activeTab === '/'}
+            onChange={() =>  navigate('/')}
           />
           <label className="tab" htmlFor="radio-1">
             Home
@@ -50,11 +59,8 @@ export default function Navbar() {
             type="radio"
             name="tabs"
             id="radio-2"
-            checked={router.pathname === '/about'}
-            onChange={() => {
-              console.log('Navigating to About');
-              router.push('/about');
-            }}
+            checked={activeTab === '/about'}
+            onChange={() => navigate('/about')}
           />
           <label className="tab" htmlFor="radio-2">
             About
@@ -63,11 +69,8 @@ export default function Navbar() {
             type="radio"
             name="tabs"
             id="radio-3"
-            checked={router.pathname === '/contact'}
-            onChange={() => {
-              console.log('Navigating to Contact');
-              router.push('/contact');
-            }}
+            checked={activeTab === '/contact'}
+            onChange={() => navigate('/contact')}
           />
           <label className="tab" htmlFor="radio-3">
             Contact
