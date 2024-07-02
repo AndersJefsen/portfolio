@@ -5,8 +5,10 @@ import Layout from '@/app/layout';
 const Contact: React.FC = () => {
   return (
     <Layout>
-      <h1>Contact Page</h1>
-      {/* Add your contact form or content here */}
+      <div className='contact-container'>
+        <h1>Contact Page</h1>
+      {/* Add your contact form or content here */}</div>
+      
     </Layout>
   );
 };

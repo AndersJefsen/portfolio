@@ -49,6 +49,7 @@
   padding: 1rem;
   border-radius: 99px;
   margin-top: 20px;
+  
 }
 .tabs-scrolled {
   display: flex;
@@ -72,7 +73,6 @@ input[type='radio'] {
   transition: color 0.15s ease-in;
   display: flex;
   color: #175a4d;
-  height: 50 px;
   width: 198px;
   font-size: 1.25rem;
   font-weight: 400;
@@ -94,7 +94,7 @@ input[type='radio'] {
   justify-content: center;
   height: 50px;
   width: 200px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 1);
   z-index: 1;
   border-radius: 99px;
   padding: 0%;

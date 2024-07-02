@@ -11,8 +11,8 @@ const Index = () => {
       {}
 
       <div className="content">
-        <h1>
-          <span>
+        <h1 className='index-h1'>
+          <span className='index-span'>
             <span>Hello. I&apos;m Anders.</span>
             <span>A Software Engineer.</span>
           </span>

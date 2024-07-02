@@ -1,0 +1,32 @@
+
+.project-page-date{
+    font-size: 0.8rem;
+    font-family: sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.project-page-h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: normal;
+}
+
+.project-page-subheading{
+    font-family: sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.project-page-content{
+    font-family: sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    padding: 0 6rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8rem;
+}
+article{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

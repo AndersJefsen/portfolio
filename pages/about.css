@@ -1,5 +1,4 @@
 .about-content{
-    padding-top: 6rem;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -14,7 +13,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     width: 100%;
     padding-right: 6rem;
     padding-left: 6rem;
