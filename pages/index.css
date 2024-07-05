@@ -75,7 +75,7 @@ h1 span {
   background-color: #1f658c;
   border-radius: 99px;
   z-index: 1;
-  justify-content: flex-start;
+  justify-content: start;
   align-items: center;
   display: flex;
   overflow: hidden;
@@ -102,7 +102,7 @@ h1 span {
     color: black;
   }
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .box1-picture {
@@ -115,15 +115,31 @@ h1 span {
   max-width: 830px;
   width: 100%;
   margin: 15px;
-  background-color: #55fffe;
-  background-color: hsl(180, 100%, 85%); /* Adjust as needed */
+  background-color: #95791c;
+
 
   border-radius: 99px;
   z-index: 1;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   display: flex;
   overflow: hidden;
+  flex-direction: column;
+  text-align: flex-start;
+}
+
+.box3 {
+  max-width: 830px;
+  width: 100%;
+  margin: 15px;
+  background-color:#82889a;
+
+  border-radius: 99px;
+  z-index: 1;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  overflow:hidden;
   flex-direction: column;
   text-align: flex-start;
 }
@@ -146,17 +162,22 @@ h1 span {
     color: black;
   }
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .box1:hover,
-.box2:hover {
+.box2:hover,
+.box3:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  img {
+    transform: translateY(20px);
+  }
 }
 
 .box1,
-.box2 {
+.box2,
+.box3 {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -165,15 +186,7 @@ h1 span {
   }
 }
 
-.box1:hover,
-.box2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-  img {
-    transform: translateY(20px);
-  }
-}
 
 @media (min-width: 1700px) {
   .box1 {
@@ -181,7 +194,7 @@ h1 span {
     margin: 30px;
     height: 550px;
   }
-  .box2 {
+  .box2,.box3 {
     max-width: 900px;
     margin: 30px;
     height: 550px;
@@ -191,11 +204,11 @@ h1 span {
 @media (max-width: 1700px) {
   .box1 {
     max-width: 500px;
-    height: 400px;
+    height: 450px;
   }
-  .box2 {
+  .box2,.box3 {
     max-width: calc(100% - 60px);
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -204,7 +217,8 @@ h1 span {
     flex-direction: column;
   }
   .box1,
-  .box2 {
+  .box2,
+  .box3 {
     max-width: calc(100% - 60px);
     margin: 15px;
     height: 400px;
