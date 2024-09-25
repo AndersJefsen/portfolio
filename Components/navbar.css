@@ -100,7 +100,7 @@ input[type='radio'] {
   padding: 0%;
   margin-top: 5px;
   margin-bottom: 5px;
-  bottom: 6px;
+  bottom: 5px;
 }
 input[id='radio']:checked + label {
   color: white;
@@ -119,13 +119,47 @@ input[id='radio-3']:checked ~ .glider {
 }
 
 @media (max-width: 700px) {
+  .container {
+    margin-inline: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 90%;
+    height: 60px;
+  }
+
   .tabs {
-    transform: scale(0.6);
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    width: 100%;
   }
+
   .tab {
-    width: 100%;
+    width: 33.33%; /* Ensures each tab takes up an equal width */
+    margin-inline: 0;
+    height: 60px;
   }
+
   .glider {
-    width: 100%;
+    width: 31%; /* Adjust width to match each tab */
+    height: 50px;
+    margin-bottom: 5px;
+    transform: translateX(0); /* Initial state */
+  }
+
+  input[id='radio-1']:checked ~ .glider {
+    transform: translateX(0); /* First tab, no translate */
+  }
+
+  input[id='radio-2']:checked ~ .glider {
+    transform: translateX(100%); /* Move by one tab */
+  }
+
+  input[id='radio-3']:checked ~ .glider {
+    transform: translateX(200%); /* Move by two tabs */
   }
 }

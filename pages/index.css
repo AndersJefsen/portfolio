@@ -223,4 +223,19 @@ h1 span {
     margin: 15px;
     height: 400px;
   }
+  h1 span{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 900;
+    letter-spacing: -2.5px;
+  }
+
+  .index-p{
+    font-size: 15px;
+    width: 100%;
+    line-height: 25px;
+    margin: 0 30px;
+
+  }
+
 }
