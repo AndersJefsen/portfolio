@@ -1,10 +1,11 @@
 {
-    "title": "Matador/CDIO Project Report: A Java-Based Software System",
+    "title": "CDIO Project: Matador",
     "date": "January 20, 2023",
     "sections": [
       {
+        "imagePath": "/image1 copy.png",
         "subheading": "Introduction",
-        "content": "As part of our software engineering diploma at DTU, Group 6 developed a virtual version of the Matador board game (Monopoly). The project spanned 3 weeks, with the goal of meeting client requirements by creating a fully functional game in Java, leveraging Java Swing for the graphical user interface (GUI). We followed Agile principles to manage the project within the given timeframe."
+        "content": "As part of our CDIO project in semester 1 at DTU, Group 6 developed a virtual version of the Matador board game (Monopoly). The project spanned 3 weeks, with the goal of meeting client requirements by creating a fully functional game in Java, leveraging Java Swing for the graphical user interface (GUI). We followed Agile principles to manage the project within the given timeframe."
       },
       {
         "subheading": "Project Scope and Objective",

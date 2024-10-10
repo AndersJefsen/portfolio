@@ -55,7 +55,7 @@ const Index = () => {
         <Link href={'/matador'} className="box2">
           <div className='index-big-card-content'>
             <div className="box2-text">
-              <h3>JavaFX Application</h3>
+              <h3>Java Swing Application</h3>
               <h2>Matador</h2>
             </div>
             <Image
