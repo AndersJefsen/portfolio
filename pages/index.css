@@ -1,6 +1,8 @@
 .content {
   width: 100%;
 }
+
+
 .index-h1 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -66,6 +68,7 @@ h1 span {
   flex-direction: row;
   opacity: 0;
   animation: dropIn 1s ease 0.8s forwards;
+
 }
 
 .box1 {
@@ -111,13 +114,12 @@ h1 span {
   bottom: -50px;
 }
 
+
 .box2 {
   max-width: 830px;
   width: 100%;
   margin: 15px;
   background-color: #95791c;
-
-
   border-radius: 99px;
   z-index: 1;
   justify-content: start;
@@ -126,6 +128,8 @@ h1 span {
   overflow: hidden;
   flex-direction: column;
   text-align: flex-start;
+  padding-left: 30px;
+
 }
 
 .box3 {
@@ -133,7 +137,6 @@ h1 span {
   width: 100%;
   margin: 15px;
   background-color:#82889a;
-
   border-radius: 99px;
   z-index: 1;
   justify-content: start;
@@ -142,10 +145,12 @@ h1 span {
   overflow:hidden;
   flex-direction: column;
   text-align: flex-start;
+  padding-left: 30px;
+
 }
 
-.box2-text {
-  width: 490px;
+.box2-text,.box3-text {
+  width: 100%;
   height: auto;
   justify-content: flex-start;
   h3 {
@@ -164,6 +169,7 @@ h1 span {
   padding-top: 50px;
   padding-bottom: 25px;
 }
+
 
 .box1:hover,
 .box2:hover,
@@ -204,11 +210,11 @@ h1 span {
 @media (max-width: 1700px) {
   .box1 {
     max-width: 500px;
-    height: 450px;
+    height: 475px;
   }
   .box2,.box3 {
     max-width: calc(100% - 60px);
-    height: 450px;
+    height: 475px;
   }
 }
 
@@ -221,8 +227,13 @@ h1 span {
   .box3 {
     max-width: calc(100% - 60px);
     margin: 15px;
-    height: 400px;
+    height: 350px;
+    
+    border-radius: 50px;
+    
   }
+
+
   h1 span{
     font-size: 35px;
     line-height: 40px;
@@ -237,5 +248,5 @@ h1 span {
     margin: 0 30px;
 
   }
-
+ 
 }

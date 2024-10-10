@@ -1,0 +1,31 @@
+{
+    "title": "StockVest: App Project ",
+    "date": "January 19th, 2024",
+    "sections": [
+      {
+        "imagePath": "/stockapp2.png",
+        "imageAlt":"stock pic",
+        "subheading": "Introduction",
+        "content": "Our group developed an Android stock-trading application. We aimed to provide novice traders with an intuitive, risk-free platform to simulate stock trading, utilizing real-time stock data. The project combined both frontend and backend elements, and was designed using the MVVM architecture."
+      },
+      {
+        "subheading": "Project Scope and Objective",
+        "content": "The core objective was to create a stock trading app with features like real-time stock data, simulated trading, and user portfolios. Additionally, we implemented optional features like price change notifications and a multi-market system to enhance the user experience."
+      },
+      {
+        "imagePath": "/stockapp1.png",
+        "imageAlt":"stock pic",
+        "subheading": "Key Contributions",
+        "content": "<ol><li><b>Backend Development:</b> We developed a custom Stock API that scraped data from Yahoo Finance, processed it with Python using Selenium and Beautiful Soup, and stored it in a PostgreSQL database. This API powered the app’s stock data display.</li><li><b>Frontend Development:</b> The frontend utilized Jetpack Compose for the UI, with clear navigation flows and design elements focused on user experience and simplicity, including features like a clear buy/sell interface and a navigation bar with visual feedback.</li><li><b>Simulated Trading and Firebase Integration:</b> We integrated Firebase to manage user accounts, portfolios, and transactions. Our simulated trading feature allowed users to buy and sell stocks using real-time data fetched from our API, all while being saved securely in Firebase.</li><li><b>Testing and Debugging:</b> Extensive stress testing was performed to ensure the app’s stability under heavy use, and significant bugs were fixed, improving responsiveness and system resource usage.</li></ol>"
+      },
+      {
+        "subheading": "Key Achievements",
+        "content": "<ul><li><b>Real-Time Stock Data:</b> The app displayed up-to-date stock prices with detailed stock views and performance graphs.</li><li><b>Simulated Trading:</b> Users could perform real-time stock trades using Firebase, offering a realistic stock trading experience without financial risk.</li><li><b>Efficient and Stable Performance:</b> The app was optimized to reduce crashes and system load, achieving significant performance improvements during stress tests.</li></ul>"
+      },
+      {
+        "subheading": "Final Outcome and Reflection",
+        "content": "The project was successful, meeting all core requirements and exceeding expectations with additional features like price change notifications and user-friendly design. Through this project, we gained hands-on experience with real-time data integration, app development, and team collaboration, preparing us for future software engineering challenges."
+      }
+    ]
+  }
+  

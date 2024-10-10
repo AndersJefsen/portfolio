@@ -7,6 +7,7 @@ import { useEffect,useState} from 'react';
 export default function Navbar() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(router.pathname);
+  const [gliderActiveTab,setGliderActiveTab] = useState(router.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,8 @@ export default function Navbar() {
   useEffect(() => {
     const handleRouteChange = (url:string) => {
       setActiveTab(url);
+      setGliderActiveTab(url); // Also update the glider
+
     }
    router.events.on('routeChangeComplete', handleRouteChange);
    return () => {
@@ -35,7 +38,7 @@ export default function Navbar() {
     const animationDuration = 500; // milliseconds
   
     setActiveTab(path); // This triggers the glider to start moving
-  
+
     setTimeout(() => {
       router.push(path);
     }, animationDuration);

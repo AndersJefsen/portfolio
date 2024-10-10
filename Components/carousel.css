@@ -1,0 +1,8 @@
+/* Override the default styles for the carousel indicators */
+.carousel .control-dots .dot {
+    width: 15px; /* Change the size of the indicators */
+    height: 15px; /* Change the size of the indicators */
+    border-radius: 50%; /* Make the indicators circular */
+    padding: 0;
+}
+

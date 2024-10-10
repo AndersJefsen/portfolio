@@ -1,0 +1,35 @@
+{
+    "title": "Matador/CDIO Project Report: A Java-Based Software System",
+    "date": "January 20, 2023",
+    "sections": [
+      {
+        "subheading": "Introduction",
+        "content": "As part of our software engineering diploma at DTU, Group 6 developed a virtual version of the Matador board game (Monopoly). The project spanned 3 weeks, with the goal of meeting client requirements by creating a fully functional game in Java, leveraging Java Swing for the graphical user interface (GUI). We followed Agile principles to manage the project within the given timeframe."
+      },
+      {
+        "subheading": "Project Scope and Objective",
+        "content": "The project required us to create a digital version of the Matador board game, capable of supporting multiple players and implementing all key game mechanics such as property purchases, rent payments, and the use of chance cards. Java was chosen as the development language, and we implemented the system using a Model-View-Controller (MVC) architecture, ensuring the logic was well-separated from the user interface for scalability and maintainability."
+      },
+      {
+        "subheading": "Technical Architecture",
+        "content": "<ol><li><b>MVC Architecture:</b> The game was structured around the MVC pattern, where the <i>Model</i> handled game logic and state (e.g., players, properties, balances), the <i>View</i> presented the game using Java Swing, and the <i>Controller</i> mediated all interactions between the model and view, managing game flow and user inputs.</li><li><b>Use of GRASP Patterns:</b> The GRASP patterns (e.g., Creator, Information Expert) were employed to distribute responsibilities across classes. This helped in modularizing the code, ensuring high cohesion within classes and low coupling between them, making the system easier to maintain and extend.</li></ol>"
+      },
+      {
+        "subheading": "Implementation Highlights",
+        "content": "<ol><li><b>Game Board Creation:</b> The game board was dynamically generated from a CSV file, which stored all the necessary information about the properties (e.g., names, prices, colors). This data-driven approach allowed easy modifications and ensured consistency in property setup.</li><li><b>Player Management:</b> Each player was managed as an individual entity, keeping track of their financial status, position on the board, and owned properties. The system ensured fair play by managing interactions like rent collection and property trades automatically.</li><li><b>Game Logic:</b> The game rules were implemented to handle complex scenarios, such as players going bankrupt, conducting property auctions, and handling chance cards. This ensured that the game adhered to the original Matador rules while allowing for fluid player interactions.</li><li><b>Devmode for Testing:</b> A development mode was included to allow for rapid testing of different game scenarios, such as manipulating player positions, altering balances, and testing game mechanics under specific conditions. This significantly reduced testing time.</li></ol>"
+      },
+      {
+        "subheading": "Testing and Validation",
+        "content": "The project underwent thorough testing, including unit tests for core components and integration tests for the overall game. We employed JUnit for automated testing, achieving test coverage for key game logic components. Real-world validation was performed through several playthroughs to ensure the game operated as expected under various scenarios."
+      },
+      {
+        "subheading": "Key Achievements",
+        "content": "<ul><li><b>Functional Completion:</b> The system successfully implemented 95% of the planned user stories, including all essential features like property transactions, rent collection, and game state management.</li><li><b>Robust Architecture:</b> By leveraging the MVC and GRASP patterns, we created a scalable and modular system that was easy to maintain and extend.</li><li><b>Efficient Development:</b> The inclusion of a development mode streamlined the testing process, allowing us to quickly verify the behavior of various game features and interactions.</li></ul>"
+      },
+      {
+        "subheading": "Final Outcome and Reflection",
+        "content": "The final product met the client’s expectations, providing a fully functional Matador game with a robust underlying system architecture. Our use of the MVC pattern allowed us to decouple the game logic from the user interface, improving maintainability and scalability. In retrospect, spending more time planning the architecture at the start could have saved time later, but overall the project was a success, achieving the majority of its goals on time."
+      }
+    ]
+  }
+  

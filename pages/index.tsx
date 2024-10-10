@@ -25,7 +25,7 @@ const Index = () => {
           </p>
         </div>
         <div className="cards">
-          <Link href={'/about'} className="box1">
+          <Link href={'/stockvest'} className="box1">
           <div className='index-small-card-content'>
             <div className="box1-text">
               <h3>Android Application</h3>
@@ -34,8 +34,25 @@ const Index = () => {
             <Image src="/pic.png" alt="stonks pic" width={400} height={500} />
          </div>
           </Link>
-
-          <Link href={'/about'} className="box2">
+          <Link href={'/porcelain'} className="box3">
+          <div className='index-big-card-content'>
+            <div className="box2-text">
+              <h3>TypeScript-based web application</h3>
+              <h2>Porcelainshop</h2>
+            </div>
+            <Image
+              src="/porcelain3.png"
+              alt="porcelain pic"
+              width={600}
+              height={500}
+            />
+            </div>
+          </Link>
+         
+          
+        </div>
+        <div className="cards">
+        <Link href={'/matador'} className="box2">
           <div className='index-big-card-content'>
             <div className="box2-text">
               <h3>JavaFX Application</h3>
@@ -49,32 +66,19 @@ const Index = () => {
             />
             </div>
           </Link>
-          
-        </div>
-        <div className="cards">
-          <Link href={'/golfrobot'} className="box3">
-          <div className='index-big-card-content'>
-            <div className="box2-text">
-              <h3>Computer Vision & Robotics Control System</h3>
-              <h2>GolfRobot</h2>
+
+          <Link href={'/golfrobot'} className="box1">
+          <div className='index-small-card-content'>
+            <div className="box1-text">
+            <h3>Computer Vision & Robotics Control System</h3>
+            <h2>GolfRobot</h2>
             </div>
             <Image
               src="/GolfRobot.png"
               alt="golfbot pic"
-              width={600}
+              width={400}
               height={500}
-            />
-            </div>
-          </Link>
-
-          <Link href={'/about'} className="box1">
-          <div className='index-small-card-content'>
-            <div className="box1-text">
-              <h3>Android Application</h3>
-              <h2>StockVest</h2>
-            </div>
-            <Image src="/pic.png" alt="stonks pic" width={400} height={500} />
-            </div>
+            />            </div>
           </Link>
 
         </div>

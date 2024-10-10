@@ -1,0 +1,38 @@
+{
+    "title": "Porcelain E-commerce App Project",
+    "date": "October 9th, 2024",
+    "sections": [
+      {
+        "subheading": "Introduction",
+        "content": "Our group developed an e-commerce application for an online porcelain store. The goal was to create a smooth checkout flow and a user-friendly experience by combining frontend and backend development with modern technologies like React and RESTful API.",
+        "images": [
+          "/porcelain1.png",
+          "/porcelain2.png",
+          "/porcelain4.png",
+          "/porcelain5.png",
+          "/porcelain6.png"
+      ]
+      },
+      {
+        "subheading": "Project Scope and Objective",
+        "content": "The primary objective was to develop an application that offers users an easy and secure platform to purchase porcelain online. Features included responsive design, user account management, and an efficient checkout system."
+
+      },
+      {
+
+        "subheading": "Key Contributions",
+        "content": "<ol><li><b>Backend Development:</b> We developed a RESTful API that handled CRUD operations for products and users, with secure user authentication using JWT.</li><li><b>Frontend Development:</b> The frontend application was built with React, featuring an intuitive user interface designed for usability and responsiveness.</li><li><b>API Integration:</b> We integrated the frontend with the backend API to enable real-time access to product data and user accounts, enhancing the overall experience.</li><li><b>Testing and Debugging:</b> Extensive testing was conducted to ensure stability and performance, resulting in improvements in system response time and usability.</li></ol>"
+      },
+      {
+        "subheading": "Key Achievements",
+        "content": "<ul><li><b>Responsive Design:</b> The application adapted seamlessly to both desktop and mobile devices, improving accessibility.</li><li><b>Secure Checkout:</b> The checkout flow was secure and easy to navigate, reducing friction in the purchasing process.</li><li><b>Efficient Data Handling:</b> The system was optimized for quick data access and lower load, resulting in better performance under stress conditions.</li></ul>"
+      },
+      {
+        "imagePath": "/file.png",
+        "imageAlt": "porcelain shop screenshot",
+        "subheading": "Final Outcome and Reflection",
+        "content": "The project was successful, meeting all core requirements with additional features that enhanced the user experience. Through this project, we gained valuable experience in app development, data handling, and teamwork, preparing us for future challenges in software engineering."
+      }
+    ]
+  }
+  
